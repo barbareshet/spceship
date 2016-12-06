@@ -4,6 +4,32 @@
 }
 
 #hero {
-    min-height: 500px;
+    min-height: 450px;
+    background: url(../images/bg.png) repeat-x 50% 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-position: center;
+}
 
+.layer {
+    position: absolute;
+    width: 400%;
+}
+.clouds {
+    background: url(../images/clouds.png) no-repeat;
+    height: 450px;
+    width: auto;
+    background-size: 100% 100%;
+    animation: slideshow 60s linear infinite;
+}
+
+
+.ship {
+    background: url(../images/spaceship.png) no-repeat;
+    height: 450px;
+    widows: auto;
+    background-attachment: 50% 0;
+    animation: slideshow 120s linear infinite;
 }
