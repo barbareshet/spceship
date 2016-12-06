@@ -29,11 +29,9 @@
 .ship {
     background: url(../images/spaceship.png) no-repeat;
     height: 450px;
-/*
-    widows: auto;
-    background-attachment: 50% 0;
-*/
     animation: slideshow 120s linear infinite;
+        position: relative;
+    right: 0;
 }
 
 body,
