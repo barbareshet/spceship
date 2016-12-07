@@ -21,17 +21,18 @@
 .clouds {
     background: url(../images/clouds.png) repeat;
     height: 450px;
-    width: 100%;
-    background-size: 100% 100%;
+	width: 200%;
+    background-size: contain;
     animation: slideshow 10s linear infinite;
 }
 
 .ship {
     background: url(../images/spaceship.png) no-repeat;
     height: 450px;
-    animation: slideshow 120s linear infinite;
-        position: relative;
+    animation: slideshow 70s linear infinite;
+	position: relative;
     right: 0;
+	background-position-x: 19%;
 }
 
 body,
