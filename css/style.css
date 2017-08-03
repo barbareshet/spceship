@@ -144,7 +144,7 @@ a:active {
     background: #55acee;
 }
 .fa-github:hover{
-    background: #000;
+    background: #650665;
 }
 @media screen and (max-width: 990px){
     #about .container {
@@ -154,9 +154,11 @@ a:active {
 }
 #contact{
     background: #000;
-    position: absolute;
-    top: 170%;
+    position: fixed;
+    bottom: 0;
     width: 100%;
     text-align: center;
-    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
