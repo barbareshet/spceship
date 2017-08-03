@@ -3,14 +3,19 @@
 }
 
 #hero {
-    min-height: 450px;
-    background: url(../images/bg.png) repeat-x 50% 50%;
+    height: 100vh;
     position: absolute;
     width: 100%;
-    height: 450px;
     overflow: hidden;
     background-position: center;
     padding: 50px;
+    background: #b2cebb; /* Old browsers */
+    background: -moz-linear-gradient(top, #b2cebb 0%, #e2e2ca 98%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #b2cebb 0%,#e2e2ca 98%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #b2cebb 0%,#e2e2ca 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .layer {
@@ -19,11 +24,11 @@
 }
 
 .clouds {
-    background: url(../images/clouds.png) repeat;
-    height: 450px;
-	width: 200%;
+    background: url(../images/clouds.png) repeat-x;
+    height: 100%;
+    width: 200%;
     background-size: contain;
-    animation: slideshow 10s linear infinite;
+    animation: slideshow 15s linear infinite;
 }
 
 .ship {
@@ -31,7 +36,7 @@
     height: 450px;
     animation: slideshow 70s linear infinite;
 	position: relative;
-    right: 0;
+    right: -85%;
 	background-position-x: 19%;
 }
 
@@ -45,73 +50,10 @@ html,
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%
+    /*width: 100%;*/
+    /*height: 100%*/
 }
 
-section {
-    margin: 0;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: #C0B3A0
-}
-
-/*
-.content {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden
-}
-
-.paralax {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background: url("https://preview.codepad.co/redirect?url=http://www.testomic.com/public/codepen-assets/img/paralax/background.jpg");
-    background-size: cover;
-    background-position: center
-}
-
-.paralax .layer {
-    position: absolute;
-    width: 400%
-}
-
-.paralax .foreground {
-    height: 50%;
-    bottom: 0;
-    background: url("https://preview.codepad.co/redirect?url=http://www.testomic.com/public/codepen-assets/img/paralax/foreground.png") repeat-x;
-    background-size: 25% 100%;
-    animation: slideshow 30s linear infinite
-}
-
-.paralax .hills {
-    height: 40%;
-    bottom: 15%;
-    background: url("https://preview.codepad.co/redirect?url=http://www.testomic.com/public/codepen-assets/img/paralax/hills.png") repeat-x;
-    background-size: 25% 100%;
-    animation: slideshow 60s linear infinite
-}
-
-.paralax .rocks1 {
-    height: 35%;
-    bottom: 25%;
-    background: url("https://preview.codepad.co/redirect?url=http://www.testomic.com/public/codepen-assets/img/paralax/rocks1.png") repeat-x;
-    background-size: 25% 100%;
-    animation: slideshow 120s linear infinite
-}
-
-.paralax .rocks2 {
-    height: 40%;
-    bottom: 15%;
-    background: url("https://preview.codepad.co/redirect?url=http://www.testomic.com/public/codepen-assets/img/paralax/rocks2.png") repeat-x;
-    background-size: 25% 100%;
-    animation: slideshow 240s linear infinite
-}
-*/
 
 @keyframes slideshow {
     0% {
@@ -170,26 +112,51 @@ a:active {
     color: white
 }
 
-#small-logo {
-    width: 30px;
-    transform: translate(-10px, 12px);
-    opacity: 1
-}
+#about{
+    position: absolute;
+    top:100%;
+    width:100%;
+    text-align: center;
+    background: white url('http://www.barbareshet.co.il/wp-content/themes/bootstrap2wordpress/assets/img/me.png') 90% -10px no-repeat;
+    min-height: 700px;
 
-#versions {
-    font-family: 'Roboto', sans-serif;
-    position: fixed;
-    top: 5%;
+}
+.divider{
+    width:50%;
+    text-align: center;
+}
+.fa{
+    background: #ccc;
+    font-size: 24px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 42px;
+    margin: 0 5px 20px 0;
+    padding: 0;
+    border-radius: 50px;
+    color: white;
+}
+.fa-facebook:hover{
+    background: #3b5998;
+}
+.fa-twitter:hover{
+    background: #55acee;
+}
+.fa-github:hover{
+    background: #000;
+}
+@media screen and (max-width: 990px){
+    #about .container {
+        background: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+    }
+}
+#contact{
+    background: #D4D9C1;
+    position: absolute;
+    top: 170%;
     width: 100%;
-    text-align: center
-}
-
-.url-highlighted {
-    opacity: 1;
-    text-decoration: none
-}
-
-.url-normal {
-    opacity: 0.5;
-    text-decoration: none
+    text-align: center;
+    height: 200px;
 }
