@@ -36,7 +36,7 @@
     height: 450px;
     animation: slideshow 70s linear infinite;
 	position: relative;
-    right: -85%;
+    right: -50%;
 	background-position-x: 19%;
 }
 
